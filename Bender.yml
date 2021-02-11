@@ -2,7 +2,7 @@ package:
   name: scm
 
 sources:
-  - target: any(rtl, tsmc55, gf22)
+  - target: any(rtl, tsmc55, gf22, all(synthesis, not(fpga)))
     files:
       - latch_scm/register_file_1r_1w_test_wrap.sv
       - latch_scm/register_file_1w_64b_multi_port_read_32b_1row.sv
